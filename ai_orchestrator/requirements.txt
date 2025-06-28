@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+motor
+redis>=4.5
+httpx
+prometheus-client
+prometheus-fastapi-instrumentator
+numpy
