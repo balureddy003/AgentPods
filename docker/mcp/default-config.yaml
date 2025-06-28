@@ -1,0 +1,10 @@
+# default-config.yaml
+# Example MCP gateway config, adjust as needed
+
+servers:
+  - id: "1"
+    url: "http://localhost:8000"
+    healthcheck:
+      path: "/health"
+      intervalSeconds: 15
+      timeoutSeconds: 5

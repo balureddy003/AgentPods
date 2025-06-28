@@ -1,0 +1,10 @@
+{
+    "servers": [
+      {
+        "id": "1",
+        "name": "agentpods-backend",
+        "url": "http://ai-orchestrator:8000",
+        "description": "Main orchestrator service"
+      }
+    ]
+  }

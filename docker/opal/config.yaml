@@ -1,0 +1,3 @@
+# OPAL config for OPA policies + data
+# Here you would define how OPAL syncs data to OPA
+# For now, defaults work fine unless you need dynamic updates
