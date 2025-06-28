@@ -1,0 +1,25 @@
+{
+    "name": "simple_echo",
+    "description": "A basic task where the agent echoes back the input.",
+    "tasks": [
+      {
+        "input": "Hello, Agent!",
+        "expected_output": "Hello, Agent!",
+        "metrics": ["exact_match"]
+      },
+      {
+        "input": "What is 2 + 2?",
+        "expected_output": "4",
+        "metrics": ["exact_match"]
+      }
+    ],
+    "config": {
+      "agents": [
+        {
+          "name": "EchoAgent",
+          "type": "ConversableAgent",
+          "model": "gpt-3.5-turbo"
+        }
+      ]
+    }
+  }

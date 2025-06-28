@@ -1,0 +1,9 @@
+policies:
+  - id: "policy-allow-all"
+    description: "Allow all requests for testing"
+    rules:
+      - match:
+          path: "/*"
+          method: "*"
+        action:
+          allow: true

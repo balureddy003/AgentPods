@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+echo "🔹 Building AI Orchestrator..."
+docker build -t agentpods/ai-orchestrator ./ai_orchestrator
+
+echo "🔹 Building AutoGen Studio..."
+docker build -t agentpods/studio ./docker/studio
+
+echo "🔹 Building AutoGen Bench..."
+docker build -t agentpods/bench ./docker/bench
+
+echo "🔹 Building MCP Context Forge..."
+docker build -t agentpods/mcp-gateway ./docker/mcp
+
+echo "🔹 Building OPA..."
+docker build -t agentpods/opa ./docker/opa
+
+echo "🔹 Building OPAL..."
+docker build -t agentpods/opal ./docker/opal
+
+echo "🔹 Building Keycloak..."
+docker build -t agentpods/keycloak ./docker/keycloak
+
+echo "✅ All containers built successfully."
